@@ -84,3 +84,28 @@ https://ws.usig.buenosaires.gob.ar/geocoder/2.2/geocoding?cod_calle=17071&altura
     {"x":"108150.992445",
     "y":"101357.282955"}
     )
+
+### API Transformar Coordenadas GK a WGS84
+ https://ws.usig.buenosaires.gob.ar/rest/convertir_coordenadas?x=108150.992445&y=101357.282955&output=lonlat
+
+     {
+     "tipo_resultado":"Ok",
+     "resultado":{
+                  "x":"-58.374427",
+                  "y":"-34.617002"
+                  }
+    }
+
+### API Traer Calles Adyacentes
+https://ws.usig.buenosaires.gob.ar/rest/obtener_calles_adyacentes?cod_calle=17071&altura=782
+
+    {"calles":  [
+                    {
+                    "Codigo":"9010",
+                    "Nombre":"INDEPENDENCIA AV."},
+                    {
+                    "Codigo":"3230",
+                    "Nombre":"CHILE"
+                    }
+                ]
+    }
