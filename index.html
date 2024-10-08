@@ -1,0 +1,54 @@
+<!doctype html>
+    <html lang="es" class="h-100" data-bs-theme="auto">
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <meta name="description" content="Normalizador y geolocalizador para PADRON">
+            <meta name="author" content="MAPA - UEICEE">
+            <meta name="generator" content="Hugo 0.122.0">
+            <title>GEO : PADRON</title>
+            <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/cover/">
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+            <link href="css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+            <meta name="theme-color" content="#712cf9">
+            <style>
+                @media (min-width: 768px) {
+                    .bd-placeholder-img-lg {
+                    font-size: 3.5rem;
+                    }
+                }               
+            </style>
+            <link href="css/geotyle.css" rel="stylesheet">
+        </head>
+        <body class="d-flex h-100 text-center text-bg-dark">
+            <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+                <header class="mb-auto">
+                    <div>
+                        <p class="float-md-start mb-0">GEO : PADRON</p>
+                        <nav class="nav nav-masthead justify-content-center float-md-end">
+                            <a class="nav-link fw-bold py-1 px-0 active" aria-current="page" href="index.html">Portada</a>
+                        </nav>
+                     </div>
+                </header>
+                <main class="col-4 container-fluid">
+                    <h1>Geolocalizador</h1>
+                    <form action="geolocalizar.php" method="post">
+                        <div class="mb-3">
+                            <br><br>
+                            <label for="labeldireccion" class="form-label">Ingrese la calle a buscar</label>
+                            <input type="text" class="form-control" name="calle">
+                            <br><br>
+                            <label for="labeldireccion" class="form-label">Ingrese la altura a buscar</label>
+                            <input type="text" class="form-control" name="altura">
+                            <br><br>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Geolocalizar!</button>
+                    </form>
+                </main>
+                <footer class="mt-auto text-white-50">
+                    <p>Desarrollado por MAPA</p>
+                </footer>
+            </div>
+            <script src="js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        </body>
+    </html>
