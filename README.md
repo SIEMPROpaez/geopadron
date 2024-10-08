@@ -76,3 +76,11 @@ https://datosabiertos-catastro-apis.buenosaires.gob.ar/catastro/parcela/?codigo_
                 "fecha_actualizacion":"27/11/2019"
                 }]
       }
+
+### API Traer Coordenadas GKBA
+https://ws.usig.buenosaires.gob.ar/geocoder/2.2/geocoding?cod_calle=17071&altura=782&metodo=puertas
+
+    (
+    {"x":"108150.992445",
+    "y":"101357.282955"}
+    )
